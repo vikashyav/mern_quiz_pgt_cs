@@ -207,4 +207,23 @@ const questionsData = [
 
 }];
 
+// const Data = {
+//   computer_org: {
+//     section_name:""
+//   }
+// };
+
+export const subjectCollection=[
+  {
+    subject_code:"computer_org",
+    subject:"Computer Organisation",
+    subsections:["section_1", ]
+  },
+  {
+    subject_code:"cloud_computing",
+    subject:"Cloud Computing",
+    subsections:["section_1"]
+  }
+]
+
 export default questionsData;
