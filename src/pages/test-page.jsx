@@ -38,7 +38,7 @@ function App() {
         <form onSubmit={handleSubmit} className=''>
           {questionsData.map((question, index) => (
             <div key={index} className="mb-4">
-              <p className="font-bold mb-2">{`${index + 1}. ${question.question}`}</p>
+              <p className="font-bold mb-2">{`${question?.questionNo ||question?.question_no ||index + 1}. ${question.question}`}</p>
               <div className="ml-4">
                 {question.options.map((option, optionIndex) => (
                   <label key={optionIndex} 

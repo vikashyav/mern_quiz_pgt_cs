@@ -22,7 +22,7 @@ function App() {
       {subjectCollection.map((item, index) => {
         return (
           // eslint-disable-next-line react/jsx-key 
-          <div className="max-w-sm max-h-min w-full p-4  rounded shadow-md">
+          <div key={index} className="max-w-sm max-h-min w-full p-4  rounded shadow-md">
             <h1 className="text-3xl font-bold text-center text-red"></h1>
 
             <div
