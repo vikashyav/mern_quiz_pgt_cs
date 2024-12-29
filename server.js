@@ -13,6 +13,10 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // Handle other requests by serving index.html
+app.get('/api', (req, res) => {
+  res.send({message:"this is repective route for api"});
+});
+
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
